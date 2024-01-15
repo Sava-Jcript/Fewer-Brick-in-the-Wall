@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fewer Brick in The Wall</title>
+    <!-- <link rel="stylesheet" href="animation.css"> -->
+    <link rel="stylesheet" href="../css/Untitled-1.css" />
+    <!-- <link rel="stylesheet" href="assets.css"> -->
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+    </style>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+    </style>
+
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <main>
+
+        <section id="screen">
+
+            <section class="startView">
+                <div class="startButtons">
+                    <div class="title1"></div>
+
+                    <div class="startGameBtn"></div>
+                    <div class="questionBtn"></div>
+
+                </div>
+            </section>
+            <div id="instructions" class="hidden">
+                <div class="returnBtn"></div>
+
+
+                <p>
+                    The point of the game is to click on the right falling walls, <br>and there are 12 of them that include some random statements, <br>facts or just "CRAZY" thoughts as most Mass Media would
+                    <br>call them. <br> If you click on three "Right" answers, you win. Otherwise three <br>incorrect answers will end the game. <br> I know this Game makes no sense whatsoever. Goodluck!
+
+                </p>
+            </div>
+
+            </div>
+            <div id="game" class="hidden">
+                <audio id="asound" src="../graphics/Synthwave_E.mp3"></audio>
+
+                <div id="game_background"></div>
+                <div id="game_ui">
+                    <div id="score_board"></div>
+                    <div id="health_board"></div>
+                </div>
+                <progress id="progressbar" value="100" max="100"></progress>
+                <div id="soundon"></div>
+                <div id="mute"></div>
+
+
+                <div id="middle_ground"></div>
+
+                <div id="a_container1">
+                    <div id="a_sprite1"></div>
+                </div>
+                <div id="a_container2">
+                    <div id="a_sprite2"></div>
+                </div>
+                <div id="a_container3">
+                    <div id="a_sprite3"></div>
+                </div>
+                <div id="a_container4">
+                    <div id="a_sprite4"></div>
+                </div>
+                <div id="a_container5">
+                    <div id="a_sprite5"></div>
+                </div>
+                <div id="a_container6">
+                    <div id="a_sprite6"></div>
+                </div>
+
+
+                <div id="b_container1">
+                    <div id="b_sprite1"></div>
+                </div>
+                <div id="b_container2">
+                    <div id="b_sprite2"></div>
+                </div>
+                <div id="b_container3">
+                    <div id="b_sprite3"></div>
+                </div>
+                <div id="b_container4">
+                    <div id="b_sprite4"></div>
+                </div>
+                <div id="b_container5">
+                    <div id="b_sprite5"></div>
+                </div>
+                <div id="b_container6">
+                    <div id="b_sprite6"></div>
+                </div>
+            </div>
+
+
+            <div id="dog" class="dogwalks"></div>
+
+            <audio id="tap" src="sound/tap.wav"></audio>
+            <audio id="rightAnswer" src="../graphics/good-click.wav"></audio>
+            <audio id="wrongAnswer" src="../graphics/bad-click.wav"></audio>
+            </div>
+
+            <div id="game_over" class="hidden">
+                <div class="playagain1"></div>
+                <div class="home"></div>
+                <!-- <div class="jacobin"></div> -->
+                <audio id="loosesound" src="../graphics/lose-sound.wav"></audio>
+            </div>
+            <div id="level_complete" class="hidden">
+                <div class="playagain2"></div>
+                <div class="home2"></div>
+                <audio id="winsound" src="../graphics/win-sound.wav"></audio>
+            </div>
+        </section>
+
+
+
+        </section>
+
+
+
+
+
+
+
+
+        <aside id="gameinfo">
+            <h1>Let's fight facism </h1>
+            <p>This game is a project that has only one purpose: Remind people of all the inequalities and injustices that a lot of people have been facing for decades, if not centries of persecution, harassement, torture and genocides just becasue of their
+                beliefs, color of skin, ideologies or just culinary habits that purely differ from the OTHERS. </P>
+
+            <!-- <nav>
+                <ul class="ul_nav">
+                    <li class="nav_bar"><a href="asset.html">Assets List</a></li>
+
+                    <li class="nav_bar"><a href="activitydiagram.html">Activity Diagram</a></li>
+
+
+                </ul>
+            </nav> -->
+            <div class="credits">
+
+                <br>Project by Ali Merkouk, Student in Multimedia Design at KEA
+
+                <br>Music Credits:
+                <a class="hover-underline-animation" href="https://www.jamendo.com/artist/495104/majed-salih" target="_blank">      Radanaziwo  - Majed Salih</a> |
+
+                <a class="hover-underline-animation" href="https://soundcloud.com/mezhdunami" target="_blank">     Flashes- Mezhdunami</a> <br> Graffiti by <a class="hover-underline-animation" href="https://banksy.co.uk/out.html" target="_blank">  Banksy
+
+
+
+
+
+
+
+            </div>
+        </aside>
+    </main>
+    <footer>
+
+    </footer>
+
+
+    <script src="../script.js"></script>
+</body>
+
+</html>

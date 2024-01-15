@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap');
+body {
+    background-color: rgba(148, 144, 149, 0.877);
+}
+
+.img1,
+.img2,
+.img3,
+.img4,
+.img5,
+.img6,
+.img8,
+.img7 {
+    margin-left: 12vw;
+}
+
+h1 {
+    display: block;
+    color: aliceblue;
+    text-align: center;
+    padding: 2vw;
+    font-family: "Cairo", sans-serif;
+    font-size: 6vw;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(29, 83, 29);
+}
+
+ul {
+    width: 75%;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-start;
+    list-style: none;
+}
+
+
+/* @media screen and (max-width: 950px) {
+    img {
+        max-width: 400px;
+    }
+    .character img {
+        max-width: 100px;
+    }
+    .objects img {
+        max-width: 40px;
+    }
+    .buttons img {
+        max-width: 90px;
+    }
+    .others img {
+        max-width: 90px;
+    }
+} */
+
+p {
+    color: aliceblue;
+    margin-left: 5vw;
+    padding: 2vw;
+    font-family: "Cairo", sans-serif;
+    font-size: 2vw;
+}
+
+.img10 {
+    margin-left: 20vw;
+}
