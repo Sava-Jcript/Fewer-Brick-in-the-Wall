@@ -124,8 +124,8 @@ a:visited {
 
 #game_background {
     background-image: url("../graphics/background1.svg");
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    height: 80%;
     background-size: 141%;
     background-position: center;
 }
