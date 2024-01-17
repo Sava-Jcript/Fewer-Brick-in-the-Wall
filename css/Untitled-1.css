@@ -220,7 +220,7 @@ a:visited {
 }
 
 #level_complete {
-    background-image: url("../graphics/game-won.svg22");
+    background-image: url("../graphics/game-won.svg");
     background-position: center;
     background-size: cover;
     background-size: 106%;
