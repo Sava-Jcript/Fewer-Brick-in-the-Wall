@@ -23,7 +23,7 @@ let tap = document.querySelector("#tap");
 let wrongAnswer = document.querySelector("#wrongAnswer");
 let score = 0;
 const scoreNeededToWin = 3;
-let lives = 3;
+let lives = 4;
 let gameRunning;
 
 
@@ -73,7 +73,7 @@ function mutingMusic() {
 
 function timeRunning() {
     time = document.getElementById("progressbar");
-    var timeLeft = 100;
+    var timeLeft = 110;
     interval = setInterval(frame, 520);
 
     function frame() {
@@ -462,7 +462,7 @@ function restartGame() {
 
 
     score = 0;
-    lives = 3;
+    lives = 4;
     document.getElementById("asound").load();
     clearInterval(interval);
     document.querySelector("#health_board").classList.value = "";
