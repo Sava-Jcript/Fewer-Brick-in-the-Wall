@@ -460,6 +460,7 @@ function restartGame() {
     winView.classList.add("hidden");
 
 
+    resetFallingObjects();
 
     score = 0;
     lives = 4;
@@ -469,4 +470,18 @@ function restartGame() {
     document.querySelector("#score_board").classList.value = "";
 
     startGame();
+}
+
+
+function resetFallingObjects() {
+    const fallingObjects = document.querySelectorAll(".fallDown");
+    fallingObjects.forEach((obj) => {
+        obj.classList.remove("stop");
+        obj.classList.remove("fallDown");
+        obj.classList.remove("rotateAndDisappear");
+        obj.removeEventListener("click", targetClick);
+        obj.removeEventListener("click", targetClick2);
+        obj.removeEventListener("animationiteration", destroyedItem);
+        obj.removeEventListener("animationiteration", destroyedItem2);
+    });
 }
