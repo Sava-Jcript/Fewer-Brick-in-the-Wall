@@ -226,7 +226,7 @@ function startGame() {
 }
 
 function targetClick() {
-    audio = new Audio("./graphics/good-click.wav");
+    audio = new Audio("../graphics/good-click.wav");
     audio.play();
 
     this.classList.add("stop");
@@ -340,7 +340,7 @@ function checkResult() {
 
 function gameOver() {
 
-    audio1 = new Audio("./graphics/lose-sound.wav");
+    audio1 = new Audio("../graphics/lose-sound.wav");
     audio1.play();
     audio2.pause();
     mySound.pause();
@@ -412,7 +412,7 @@ function winGame() {
     mySound.pause();
     winView.classList.remove("hidden");
     document.querySelector(".home2").addEventListener("click", exit);
-    audio2 = new Audio('./graphics/win-sound.wav');
+    audio2 = new Audio('../graphics/win-sound.wav');
     audio2.play();
     audio1.pause();
 
@@ -429,7 +429,7 @@ function loseGame() {
     loseview.classList.remove("hidden");
 
     document.querySelector(".home").addEventListener("click", exit);
-    audio3 = new Audio('./graphics/lose-sound.wav');
+    audio3 = new Audio('../graphics/lose-sound.wav');
     audio3.play();
     audio1.pause();
 

@@ -86,7 +86,7 @@ a:visited {
 /* selected link */
 
 #mute {
-    background-image: url("../graphics/sound-off.svg");
+    background-image: url("/graphics/sound-off.svg");
     background-size: 100%;
     width: 4%;
     aspect-ratio: 1/3;
@@ -98,7 +98,7 @@ a:visited {
 }
 
 #soundon {
-    background-image: url("../graphics/sound-on.svg");
+    background-image: url("/graphics/sound-on.svg");
     background-size: 100%;
     width: 4%;
     aspect-ratio: 1/3;
@@ -123,7 +123,7 @@ a:visited {
 }
 
 #game_background {
-    background-image: url("../graphics/background1.svg");
+    background-image: url("/graphics/background1.svg");
     width: 100%;
     height: 100%;
     background-size: 141%;
@@ -141,19 +141,19 @@ a:visited {
 }
 
 .score0 {
-    background-image: url("../graphics/s_nr0.svg");
+    background-image: url("/graphics/s_nr0.svg");
 }
 
 .score1 {
-    background-image: url("../graphics/s_nr1.svg");
+    background-image: url("/graphics/s_nr1.svg");
 }
 
 .score2 {
-    background-image: url("../graphics/s_nr2.svg");
+    background-image: url("/graphics/s_nr2.svg");
 }
 
 .score3 {
-    background-image: url("../graphics/s_nr3.svg");
+    background-image: url("/graphics/s_nr3.svg");
 }
 
 #progressbar {
@@ -192,19 +192,19 @@ a:visited {
 }
 
 .lives3 {
-    background-image: url("../graphics/heart_3ives.svg");
+    background-image: url("/graphics/heart_3ives.svg");
 }
 
 .lives2 {
-    background-image: url("../graphics/heart_2lives.svg");
+    background-image: url("/graphics/heart_2lives.svg");
 }
 
 .lives1 {
-    background-image: url("../graphics/heart_1life.svg");
+    background-image: url("/graphics/heart_1life.svg");
 }
 
 .lives0 {
-    background-image: url("../graphics/heart_0.svg");
+    background-image: url("/graphics/heart_0.svg");
 }
 
 #title_screen,
@@ -220,7 +220,7 @@ a:visited {
 }
 
 #level_complete {
-    background-image: url("../graphics/game-won.svg");
+    background-image: url("/graphics/game-won.svg");
     background-position: center;
     background-size: cover;
     background-size: 106%;
@@ -239,7 +239,7 @@ a:visited {
 }
 
 #game_over {
-    background-image: url("../graphics/game-over.svg");
+    background-image: url("/graphics/game-over.svg");
     background-position: center;
     background-size: cover;
     background-size: 122%;
@@ -260,7 +260,7 @@ a:visited {
     top: 60.8%;
     cursor: pointer;
     background-size: 100%;
-    /* background-image: url("../graphics/home-01.svg"); */
+    /* background-image: url("/graphics/home-01.svg"); */
 }
 
 
@@ -272,7 +272,7 @@ a:visited {
     top: 67.8%;
     cursor: pointer;
     background-size: 100%;
-    background-image: url("../graphics/home-01.svg");
+    background-image: url("/graphics/home-01.svg");
 } */
 
 .home2 {
@@ -296,7 +296,7 @@ a:visited {
 }
 
 .playagain1 {
-    /* background-image: url("../graphics/try-again.svg"); */
+    /* background-image: url("/graphics/try-again.svg"); */
     background-position: center;
     background-size: 100%;
 }
@@ -334,7 +334,7 @@ ul {
 .startView {
     width: 100%;
     height: 100%;
-    background-image: url("../graphics/intro-1-01.svg");
+    background-image: url("/graphics/intro-1-01.svg");
     background-position: center;
     background-size: cover;
     display: flex;
@@ -353,7 +353,7 @@ ul {
     left: 4%;
     position: relative;
     transition: 5s ease-in-out;
-    background-image: url("../graphics/title.svg");
+    background-image: url("/graphics/title.svg");
 }
 
 .startButtons {
@@ -366,7 +366,7 @@ ul {
 }
 
 .startGameBtn {
-    background-image: url("../graphics/play.svg");
+    background-image: url("/graphics/play.svg");
     background-position: center;
     background-size: cover;
     border-radius: 20px;
@@ -385,7 +385,7 @@ ul {
 }
 
 .questionBtn {
-    background-image: url("../graphics/inst-button.svg");
+    background-image: url("/graphics/inst-button.svg");
     background-position: center;
     background-size: cover;
     border-radius: 20px;
@@ -426,7 +426,7 @@ ul {
 }
 
 #instructions {
-    background-image: url("../graphics/instructions-final-01.svg");
+    background-image: url("/graphics/instructions-final-01.svg");
     background-size: 101%;
     background-position: center;
     margin-top: -2vw;
@@ -435,7 +435,7 @@ ul {
 }
 
 .returnBtn {
-    background-image: url("../graphics/return-button.svg");
+    background-image: url("/graphics/return-button.svg");
     background-position: center;
     background-size: cover;
     border-radius: 20px;
@@ -588,7 +588,7 @@ nav a {
     position: absolute;
     width: 530%;
     height: 270%;
-    background-image: url("../graphics/option1.svg");
+    background-image: url("/graphics/option1.svg");
     background-repeat: no-repeat;
     cursor: pointer;
 }
@@ -598,7 +598,7 @@ nav a {
     width: 460%;
     height: 380%;
     background-size: 100%;
-    background-image: url("../graphics/option6.svg");
+    background-image: url("/graphics/option6.svg");
     background-repeat: no-repeat;
     cursor: pointer;
 }
@@ -608,7 +608,7 @@ nav a {
     width: 460%;
     height: 380%;
     background-size: 100%;
-    background-image: url("../graphics/option7.svg");
+    background-image: url("/graphics/option7.svg");
     background-repeat: no-repeat;
     cursor: pointer;
 }
@@ -618,7 +618,7 @@ nav a {
     width: 460%;
     height: 380%;
     background-size: 100%;
-    background-image: url("../graphics/option8.svg");
+    background-image: url("/graphics/option8.svg");
     background-repeat: no-repeat;
     cursor: pointer;
 }
@@ -628,7 +628,7 @@ nav a {
     width: 460%;
     height: 380%;
     background-size: 91%;
-    background-image: url("../graphics/option10.svg");
+    background-image: url("/graphics/option10.svg");
     background-repeat: no-repeat;
     cursor: pointer;
 }
@@ -638,7 +638,7 @@ nav a {
     width: 460%;
     height: 380%;
     background-size: 87%;
-    background-image: url("../graphics/option11.svg");
+    background-image: url("/graphics/option11.svg");
     background-repeat: no-repeat;
     cursor: pointer;
 }
@@ -648,7 +648,7 @@ nav a {
     width: 500%;
     height: 440%;
     background-size: 92%;
-    background-image: url("../graphics/option5.svg");
+    background-image: url("/graphics/option5.svg");
     background-repeat: no-repeat;
     cursor: pointer;
 }
@@ -658,7 +658,7 @@ nav a {
     width: 460%;
     height: 380%;
     background-size: 100%;
-    background-image: url("../graphics/option2.svg");
+    background-image: url("/graphics/option2.svg");
     background-repeat: no-repeat;
     cursor: pointer;
 }
@@ -668,7 +668,7 @@ nav a {
     width: 460%;
     height: 380%;
     background-size: 100%;
-    background-image: url("../graphics/option3.svg");
+    background-image: url("/graphics/option3.svg");
     background-repeat: no-repeat;
     cursor: pointer;
 }
@@ -676,7 +676,7 @@ nav a {
 #b_sprite4 {
     width: 460%;
     height: 380%;
-    background: url("../graphics/option4.svg");
+    background: url("/graphics/option4.svg");
     background-size: 93%;
     background-repeat: no-repeat;
     cursor: pointer;
@@ -685,7 +685,7 @@ nav a {
 #b_sprite5 {
     width: 460%;
     height: 380%;
-    background: url("../graphics/option12.svg");
+    background: url("/graphics/option12.svg");
     background-size: 93%;
     background-repeat: no-repeat;
     cursor: pointer;
@@ -694,7 +694,7 @@ nav a {
 #b_sprite6 {
     width: 460%;
     height: 380%;
-    background: url("../graphics/option15.svg");
+    background: url("/graphics/option15.svg");
     background-size: 93%;
     background-repeat: no-repeat;
     cursor: pointer;
@@ -871,7 +871,7 @@ nav a {
 
 
 /* #dog {
-    background-image: url("../graphics");
+    background-image: url("/graphics");
     background-size: 90%;
     width: 15%;
     aspect-ratio: 1/1;
@@ -945,7 +945,7 @@ nav a {
     position: absolute;
     width: 45%;
     height: 50%;
-    background-image: url("../graphics/question.svg");
+    background-image: url("/graphics/question.svg");
     background-size: 100%;
     top: 60%;
     left: 20%;
@@ -955,7 +955,7 @@ nav a {
     position: absolute;
     width: 45%;
     height: 50%;
-    background-image: url("../graphics/answer1.svg");
+    background-image: url("/graphics/answer1.svg");
     background-size: 100%;
     left: 36%;
     top: 60%;
@@ -965,7 +965,7 @@ nav a {
     position: absolute;
     width: 45%;
     height: 50%;
-    background-image: url("../graphics/answer1.svg");
+    background-image: url("/graphics/answer1.svg");
     background-size: 100%;
     left: 56%;
     top: 60%;
@@ -975,7 +975,7 @@ nav a {
     position: absolute;
     width: 45%;
     height: 50%;
-    background-image: url("../graphics/answer1.svg");
+    background-image: url("/graphics/answer1.svg");
     background-size: 100%;
     left: 76%;
     top: 60%;
