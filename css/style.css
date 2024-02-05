@@ -1,37 +1,325 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Bungee+Shade&family=Cairo&family=Faster+One&family=Inter:wght@300&family=JetBrains+Mono:wght@100&family=Joan&family=Kdam+Thmor+Pro&family=Keania+One&family=Kumar+One&family=Major+Mono+Display&display=swap');
 body {
-    background-color: rgba(140, 120, 146, 0.248);
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+    margin-top: 3vw;
 }
 
-.img1,
-.img2,
-.img3,
-.img4,
-.img5,
-.img6,
-.img8,
-.img7 {
-    margin-left: 12vw;
+main {
+    display: grid;
+    grid-gap: 2%;
+    grid-template-columns: 74% 1fr;
 }
 
-h1 {
-    display: block;
-    color: rgb(40, 43, 45);
-    text-align: center;
-    padding: 2vw;
-    font-family: "Cairo", sans-serif;
-    font-size: 6vw;
+#gameinfo {
+    font-family: "cairo", sans-serif;
+    font-size: 1.2vw;
+    padding-right: 1vw;
 }
 
-nav a {
+.ul_nav {
+    display: grid;
+    justify-items: left;
+    height: 100%;
+    margin: 20% 0 0 0;
+    padding: 0;
+    margin-top: 3vw;
+}
+
+.nav_bar {
+    list-style: none;
+    display: grid;
+    align-content: center;
+    font-size: 1.3vw;
+    font-family: "cairo", sans-serif;
+    color: black;
+}
+
+.nav_bar {
+    display: inline-block;
+    position: relative;
+}
+
+.nav_bar:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.nav_bar:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.credits {
+    grid-row: 4/5;
+    align-self: end;
+    font-size: 0.8vw;
+    margin-top: 11vw;
+}
+
+a:link {
+    color: black;
     text-decoration: none;
-    color: rgb(29, 83, 29);
+}
+
+
+/* visited link */
+
+a:visited {
+    color: lightgray;
+    text-decoration: none;
+}
+
+
+/* mouse over link */
+
+
+/* selected link */
+
+#mute {
+    background-image: url("/graphics/sound-off.svg");
+    background-size: 100%;
+    width: 4%;
+    aspect-ratio: 1/3;
+    position: absolute;
+    top: 93%;
+    left: 5%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+#soundon {
+    background-image: url("/graphics/sound-on.svg");
+    background-size: 100%;
+    width: 4%;
+    aspect-ratio: 1/3;
+    position: absolute;
+    top: 93%;
+    left: 1%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+#screen {
+    position: relative;
+    margin-left: 1%;
+    width: 100%;
+    aspect-ratio: 16/9;
+    overflow: hidden;
+}
+
+#game {
+    width: 100%;
+    height: 100%;
+}
+
+#game_background {
+    background-image: url("/graphics/background1.svg");
+    width: 100%;
+    height: 100%;
+    background-size: 141%;
+    background-position: center;
+}
+
+#score_board {
+    background-size: 100%;
+    width: 10%;
+    aspect-ratio: 1/3;
+    position: absolute;
+    top: 6%;
+    left: 87%;
+    background-repeat: no-repeat;
+}
+
+.score0 {
+    background-image: url("/graphics/s_nr0.svg");
+}
+
+.score1 {
+    background-image: url("/graphics/s_nr1.svg");
+}
+
+.score2 {
+    background-image: url("/graphics/s_nr2.svg");
+}
+
+.score3 {
+    background-image: url("/graphics/s_nr3.svg");
+}
+
+#progressbar {
+    width: 35%;
+    padding: 0px;
+    border: 4px #fffcfc37 solid;
+    border-radius: 10px;
+    height: 3.5%;
+    position: absolute;
+    left: 32%;
+    top: 2%;
+}
+
+#progressbar::-webkit-progress-bar {
+    background: transparent;
+}
+
+#progressbar::-webkit-progress-value {
+    background: #00f7ff;
+    border-radius: 1px;
+}
+
+#progressbar::-moz-progress-bar {
+    background-color: #ffff00;
+    border-radius: 1.3vw;
+}
+
+#health_board {
+    background-size: 100%;
+    width: 10%;
+    aspect-ratio: 1/3;
+    position: absolute;
+    top: -3%;
+    left: 89%;
+    background-repeat: no-repeat;
+}
+
+.lives3 {
+    background-image: url("/graphics/heart_3ives.svg");
+}
+
+.lives2 {
+    background-image: url("/graphics/heart_2lives.svg");
+}
+
+.lives1 {
+    background-image: url("/graphics/heart_1life.svg");
+}
+
+.lives0 {
+    background-image: url("/graphics/heart_0.svg");
+}
+
+#title_screen,
+#instructions,
+#middle_ground,
+#game_over,
+#level_complete {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#level_complete {
+    background-image: url("/graphics/game-won.svg");
+    background-position: center;
+    background-size: cover;
+    background-size: 106%;
+    height: 107%;
+    width: 114%;
+    left: -9%;
+}
+
+#game_over,
+#level_complete {
+    font-family: sans-serif;
+    font-size: 4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#game_over {
+    background-image: url("/graphics/game-over.svg");
+    background-position: center;
+    background-size: cover;
+    background-size: 122%;
+    height: 130%;
+    width: 103%;
+    margin-top: -1.7vw;
+}
+
+#middle_ground {
+    pointer-events: none;
+}
+
+.home {
+    width: 28.2%;
+    height: 28.2%;
+    position: absolute;
+    left: 33.5%;
+    top: 60.8%;
+    cursor: pointer;
+    background-size: 100%;
+    /* background-image: url("/graphics/home-01.svg"); */
+}
+
+
+/* .jacobin {
+    width: 28.2%;
+    height: 28.2%;
+    position: absolute;
+    left: 70.5%;
+    top: 67.8%;
+    cursor: pointer;
+    background-size: 100%;
+    background-image: url("/graphics/home-01.svg");
+} */
+
+.home2 {
+    width: 28.2%;
+    height: 28.2%;
+    position: absolute;
+    left: 14.9%;
+    top: 66.8%;
+    cursor: pointer;
+    background-size: 100%;
+
+}
+
+.playagain1 {
+    width: 28.2%;
+    height: 28.2%;
+    position: absolute;
+    left: 53%;
+    top: 51.8%;
+    cursor: pointer;
+}
+
+.playagain1 {
+    /* background-image: url("/graphics/try-again.svg"); */
+    background-position: center;
+    background-size: 100%;
+}
+
+.playagain2 {
+
+    width: 28.2%;
+    height: 28.2%;
+    position: absolute;
+    left: 40.9%;
+    top: 59.8%;
+    cursor: pointer;
+    background-size: 100%;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+footer {
+    width: 100%;
+    margin-top: 3em;
+    bottom: 0;
 }
 
 ul {
@@ -43,51 +331,731 @@ ul {
     list-style: none;
 }
 
+.startView {
+    width: 100%;
+    height: 100%;
+    background-image: url("/graphics/intro-1-01.svg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+}
 
-/* @media screen and (max-width: 950px) {
-    img {
-        max-width: 400px;
+.title1 {
+    background-position: center;
+    background-size: cover;
+    width: 70vw;
+    height: 24vw;
+    font-size: clamp(1rem, 10%, 2rem);
+    top: -42%;
+    left: 4%;
+    position: relative;
+    transition: 5s ease-in-out;
+    background-image: url("/graphics/title.svg");
+}
+
+.startButtons {
+    display: flex;
+    width: 100%;
+    height: 45%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.startGameBtn {
+    background-image: url("/graphics/play.svg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+    width: 8vw;
+    height: 8vw;
+    font-size: clamp(1rem, 10%, 2rem);
+    display: flex;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: block;
+    top: 58%;
+    left: -59%;
+    position: relative;
+    transition: 5s ease-in-out;
+}
+
+.questionBtn {
+    background-image: url("/graphics/inst-button.svg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+    width: 8vw;
+    height: 8vw;
+    font-size: clamp(1rem, 10%, 2rem);
+    display: flex;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: block;
+    top: 58%;
+    left: -17%;
+    position: relative;
+    transition: 5s ease-in-out;
+}
+
+.questionBtn:hover {
+    transform: rotate(-360deg);
+}
+
+.startGameBtn:hover {
+    transform: rotate(360deg);
+}
+
+#instructions p {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 16%;
+    margin-left: 7%;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1.5vw;
+    color: #000000;
+    padding: 1vw;
+    line-height: 4vw;
+    text-align: justify;
+}
+
+#instructions {
+    background-image: url("/graphics/instructions-final-01.svg");
+    background-size: 101%;
+    background-position: center;
+    margin-top: -2vw;
+    width: 102%;
+    height: 108%;
+}
+
+.returnBtn {
+    background-image: url("/graphics/return-button.svg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+    width: 10vw;
+    height: 10vw;
+    max-width: 150px;
+    max-height: 130px;
+    font-size: clamp(7rem, 10%, 2rem);
+    display: flex;
+    text-decoration: none;
+    text-transform: uppercase;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    display: block;
+    margin-top: 3vw;
+    margin-left: 2vw;
+}
+
+li {
+    margin-right: 25px;
+}
+
+
+/* Footer */
+
+#globalNav {
+    font-family: "Bebas Neue", cursive;
+    font-size: 2em;
+    margin-top: 1em;
+    text-align: center;
+    justify-content: center;
+    margin-left: 38%;
+}
+
+#globalNav img {
+    max-width: 200px;
+    margin-top: -20px;
+}
+
+#someNav {
+    font-family: "Bebas Neue", cursive;
+    font-size: 1.5vw;
+}
+
+#someNav ul {
+    flex-flow: row;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(29, 83, 29);
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-size: 1.3vw;
+}
+
+
+/* Adding containers */
+
+#a_container1,
+#a_container2,
+#a_container3,
+#a_container4,
+#a_container5,
+#a_container6 {
+    position: absolute;
+    width: 10%;
+    aspect-ratio: 1/1;
+}
+
+#b_container1,
+#b_container2,
+#b_container3,
+#b_container4,
+#b_container5,
+#b_container6 {
+    position: absolute;
+    width: 10%;
+    aspect-ratio: 1/1;
+    /* overflow: hidden; */
+}
+
+
+/* Adding positions */
+
+.position1 {
+    top: 60%;
+    left: 27.8%;
+}
+
+.position2 {
+    left: 43.7%;
+    top: 56.9%;
+}
+
+.position3 {
+    left: 58.1%;
+    top: 48%;
+}
+
+.position4 {
+    left: 72.4%;
+    top: 48.7%;
+}
+
+.position5 {
+    top: -48%;
+    left: 31.1%;
+}
+
+.position6 {
+    left: 42.9%;
+    top: -41%
+}
+
+.position7 {
+    left: 57.9%;
+    top: -48%
+}
+
+.position8 {
+    left: 72.74%;
+    top: -48%
+}
+
+.position9 {
+    top: -78%;
+    left: 29.1%;
+}
+
+.position10 {
+    left: 44.9%;
+    top: -71%
+}
+
+.position11 {
+    left: 59.9%;
+    top: -78%
+}
+
+.position12 {
+    left: 74.74%;
+    top: -78%
+}
+
+
+/*  Adding sprites */
+
+#a_sprite1 {
+    position: absolute;
+    width: 530%;
+    height: 270%;
+    background-image: url("/graphics/option1.svg");
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+#a_sprite2 {
+    position: absolute;
+    width: 460%;
+    height: 380%;
+    background-size: 100%;
+    background-image: url("/graphics/option6.svg");
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+#a_sprite3 {
+    position: absolute;
+    width: 460%;
+    height: 380%;
+    background-size: 100%;
+    background-image: url("/graphics/option7.svg");
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+#a_sprite4 {
+    position: absolute;
+    width: 460%;
+    height: 380%;
+    background-size: 100%;
+    background-image: url("/graphics/option8.svg");
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+#a_sprite5 {
+    position: absolute;
+    width: 460%;
+    height: 380%;
+    background-size: 91%;
+    background-image: url("/graphics/option10.svg");
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+#a_sprite6 {
+    position: absolute;
+    width: 460%;
+    height: 380%;
+    background-size: 87%;
+    background-image: url("/graphics/option11.svg");
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+#b_sprite1 {
+    position: absolute;
+    width: 500%;
+    height: 440%;
+    background-size: 92%;
+    background-image: url("/graphics/option5.svg");
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+#b_sprite2 {
+    position: absolute;
+    width: 460%;
+    height: 380%;
+    background-size: 100%;
+    background-image: url("/graphics/option2.svg");
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+#b_sprite3 {
+    position: absolute;
+    width: 460%;
+    height: 380%;
+    background-size: 100%;
+    background-image: url("/graphics/option3.svg");
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+#b_sprite4 {
+    width: 460%;
+    height: 380%;
+    background: url("/graphics/option4.svg");
+    background-size: 93%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+#b_sprite5 {
+    width: 460%;
+    height: 380%;
+    background: url("/graphics/option12.svg");
+    background-size: 93%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+#b_sprite6 {
+    width: 460%;
+    height: 380%;
+    background: url("/graphics/option15.svg");
+    background-size: 93%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+
+/* Animations*/
+
+.fallDown {
+    animation-name: fallDown;
+    animation-timing-function: ease-in;
+}
+
+.speed1 {
+    animation-duration: 55s;
+}
+
+.speed2 {
+    animation-duration: 69s;
+    animation-delay: 0.2s;
+}
+
+.speed3 {
+    animation-duration: 75s;
+    animation-delay: 0.3s;
+}
+
+.speed4 {
+    animation-duration: 80s;
+    animation-delay: 0.4s;
+}
+
+.speed5 {
+    animation-duration: 33.5s;
+    animation-delay: 0.5s;
+}
+
+.speed6 {
+    animation-duration: 40.6s;
+    animation-delay: 0.6s;
+}
+
+.speed7 {
+    animation-duration: 48.7s;
+    animation-delay: 0.7s;
+}
+
+.speed8 {
+    animation-duration: 90.8s;
+    animation-delay: 8s;
+}
+
+.speed9 {
+    animation-duration: 110.8s;
+    animation-delay: 0.8s;
+}
+
+.speed10 {
+    animation-duration: 130.8s;
+    animation-delay: 0.8s;
+}
+
+.speed11 {
+    animation-duration: 54.8s;
+    animation-delay: 8s;
+}
+
+.speed12 {
+    animation-duration: 70.8s;
+    animation-delay: 0.8s;
+}
+
+
+/* .speed9 {
+            animation-duration: 3.9s;
+            animation-delay: 0.9s;
+        }
+        
+        .speed10 {
+            animation-duration: 3s;
+            animation-delay: 1.2s;
+        }
+        
+        .speed11 {
+            animation-duration: 1.9s;
+            animation-delay: 1.4s;
+        }
+        
+        .speed12 {
+            animation-duration: 2.8s;
+            animation-delay: 1.6s;
+        }
+        
+        .speed13 {
+            animation-duration: 2.7s;
+            animation-delay: 1.8s;
+        } */
+
+.rotateAndDisappear {
+    animation: rotateAndDisappear 1.2s;
+}
+
+@keyframes rotateAndDisappear {
+    100% {
+        transform: rotate(3turn) scale(0);
     }
-    .character img {
-        max-width: 100px;
+}
+
+@keyframes fallDown {
+    from {
+        transform: translateY(0);
     }
-    .objects img {
-        max-width: 40px;
+    to {
+        transform: translateY(1100%);
     }
-    .buttons img {
-        max-width: 90px;
+}
+
+
+/* @-webkit-keyframes gameSprites {
+                0% {
+                    opacity: 0;
+                }
+                20% {
+                    opacity: 0;
+                }
+                100% {
+                    opacity: 1;
+                }
+            }
+            
+            @-moz-keyframes gameSprites {
+                0% {
+                    opacity: 0;
+                }
+                20% {
+                    opacity: 0;
+                }
+                100% {
+                    opacity: 1;
+                }
+            }
+            
+            @-o-keyframes gameSprites {
+                0% {
+                    opacity: 0;
+                }
+                20% {
+                    opacity: 0;
+                }
+                100% {
+                    opacity: 1;
+                }
+            }
+            
+            @keyframes gameSprites {
+                0% {
+                    opacity: 0;
+                }
+                20% {
+                    opacity: 0;
+                }
+                100% {
+                    opacity: 1;
+                }
+            } */
+
+
+/* game_sprites {
+                -webkit-animation: 5s ease 1 normal;
+                -moz-animation: 5s ease 1 normal;
+                animation: 5s ease 1 normal;
+                -o-animation: 5s ease 1 normal;
+            } */
+
+
+/* #dog {
+    background-image: url("/graphics");
+    background-size: 90%;
+    width: 15%;
+    aspect-ratio: 1/1;
+    position: absolute;
+    top: 72%;
+    left: 86%;
+} */
+
+.notDisplayElement {
+    display: none;
+}
+
+.startButtons,
+.playagain1,
+.playagain2 {
+    transform-origin: center bottom;
+    animation-name: fire_animation_kf;
+    animation-duration: 2s;
+    /* animation-delay:200ms; */
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+
+/* @keyframes fire_animation_kf {
+    0% {
+        transform: skew(1deg);
     }
-    .others img {
-        max-width: 90px;
+    20% {
+        transform: skew(1deg);
+    }
+    40% {
+        transform: skew(-1deg);
+    }
+    60% {
+        transform: skew(1deg) scaleY(1.02);
+    }
+    80% {
+        transform: skew(-1deg) scaleY(0.98);
+    }
+    100% {
+        transform: skew(1deg);
     }
 } */
 
+.fade_out {
+    animation: fade_out 19s infinite;
+}
+
+
+/* @keyframes fade_out {
+        from {
+            opacity: 1;
+        }
+        to {
+            opacity: 0;
+        }
+    } */
+
+
+/* .animation {
+    border: 2px solid black;
+    width: 100%;
+    aspect-ratio: 1/1;
+    position: relative;
+    overflow: hidden;
+}
+
+.wall {
+    position: absolute;
+    width: 45%;
+    height: 50%;
+    background-image: url("/graphics/question.svg");
+    background-size: 100%;
+    top: 60%;
+    left: 20%;
+}
+
+.wall1 {
+    position: absolute;
+    width: 45%;
+    height: 50%;
+    background-image: url("/graphics/answer1.svg");
+    background-size: 100%;
+    left: 36%;
+    top: 60%;
+}
+
+.wall2 {
+    position: absolute;
+    width: 45%;
+    height: 50%;
+    background-image: url("/graphics/answer1.svg");
+    background-size: 100%;
+    left: 56%;
+    top: 60%;
+}
+
+.wall3 {
+    position: absolute;
+    width: 45%;
+    height: 50%;
+    background-image: url("/graphics/answer1.svg");
+    background-size: 100%;
+    left: 76%;
+    top: 60%;
+} */
+
+.title1 {
+    transform-origin: center bottom;
+    animation-name: dancing;
+    animation-duration: 2s;
+    /* animation-delay:200ms; */
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes dancing {
+    0% {
+        transform: skew(1deg);
+    }
+    20% {
+        transform: skew(1deg);
+    }
+    40% {
+        transform: skew(-1deg);
+    }
+    60% {
+        transform: skew(1deg) scaleY(1.02);
+    }
+    80% {
+        transform: skew(-1deg) scaleY(0.98);
+    }
+    100% {
+        transform: skew(1deg);
+    }
+}
+
+h1 {
+    font-size: 1.6vw;
+    font-family: 'Bungee Shade', cursive;
+}
+
 p {
-    color: rgb(46, 48, 50);
-    margin-left: 9vw;
-    padding: 2vw;
-    font-family: "Cairo", sans-serif;
-    font-size: 2vw;
+
+    font-family: 'Cairo', sans-serif;
 }
 
-.img10 {
-    margin-left: 20vw;
+
+a:-webkit-any-link {
+    cursor: pointer;
+    text-decoration: none;
 }
 
-.pic {
-    margin-top: -15vw;
+a {
+    display: inline-block;
+    position: relative;
+    color: rgb(17, 17, 17);
 }
 
-.pic4 {
-    margin-top: -15vw;
-    margin-left: 0vw;
+
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: #111;
 }
 
-.pic7 {
-    margin-top: -2vw;
+.hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #111;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
 }
 
-.character {
-    margin-top: 13vw;
-    margin-left: 12vw;
+.hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
